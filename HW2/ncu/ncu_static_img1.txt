@@ -1,0 +1,32 @@
+==PROF== Connected to process 2620 (C:\Au26_GPU\HW2\x64\Release\HW2.exe)
+==PROF== Profiling "gaussBlurKernel_staticShared": 0%....50%....100% - 1 pass
+==PROF== Disconnected from process 2620
+Image: 240 x 240
+Loaded image size: 57600 bytes
+Block: 16 x 16
+Grid: 15 x 15
+Saved output: hw2_outimage1_static.png
+Timer #1 - GPU allocation + transfers + kernel: 1216.661000 ms
+Timer #2 - Kernel launch + synchronization: 703.633500 ms
+[2620] HW2.exe@127.0.0.1
+  gaussBlurKernel_staticShared(const unsigned char *, unsigned char *, const float *, int, int) (15, 15, 1)x(16, 16, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: Command line profiler metrics
+    ----------------------------------- ----------- ------------
+    Metric Name                         Metric Unit Metric Value
+    ----------------------------------- ----------- ------------
+    dram__bytes.sum                           Kbyte       223.10
+    dram__bytes_read.sum                      Kbyte       220.54
+    dram__bytes_write.sum                     Kbyte         2.56
+    dram__sectors_read.sum                   sector        6,892
+    dram__sectors_write.sum                  sector           80
+    gpu__cycles_elapsed.sum                   cycle       28,798
+    gpu__time_duration.avg                       us        18.62
+    gpu__time_duration.sum                       us        18.62
+    sm__cycles_elapsed.avg                    cycle    28,883.40
+    sm__cycles_elapsed.avg.per_second           Ghz         1.55
+    sm__inst_executed.sum                      inst    1,593,900
+    smsp__cycles_elapsed.sum                  cycle    4,621,344
+    smsp__cycles_elapsed.sum.per_second         Ghz       248.14
+    smsp__inst_executed.sum                    inst    1,593,900
+    ----------------------------------- ----------- ------------
+

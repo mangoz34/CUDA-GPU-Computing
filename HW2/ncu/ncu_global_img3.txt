@@ -1,0 +1,32 @@
+==PROF== Connected to process 6812 (C:\Au26_GPU\HW2\x64\Release\HW2.exe)
+==PROF== Profiling "gaussBlurKernel_globalmem": 0%....50%....100% - 1 pass
+==PROF== Disconnected from process 6812
+Image: 850 x 850
+Loaded image size: 722500 bytes
+Block: 16 x 16
+Grid: 54 x 54
+Saved output: hw2_outimage3_global.png
+Timer #1 - GPU allocation + transfers + kernel: 1249.620100 ms
+Timer #2 - Kernel launch + synchronization: 710.228300 ms
+[6812] HW2.exe@127.0.0.1
+  gaussBlurKernel_globalmem(const unsigned char *, unsigned char *, const float *, int, int) (54, 54, 1)x(16, 16, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: Command line profiler metrics
+    ----------------------------------- ----------- ------------
+    Metric Name                         Metric Unit Metric Value
+    ----------------------------------- ----------- ------------
+    dram__bytes.sum                           Mbyte         3.98
+    dram__bytes_read.sum                      Mbyte         3.09
+    dram__bytes_write.sum                     Kbyte       889.79
+    dram__sectors_read.sum                   sector       96,649
+    dram__sectors_write.sum                  sector       27,806
+    gpu__cycles_elapsed.sum                   cycle      243,807
+    gpu__time_duration.avg                       us       155.10
+    gpu__time_duration.sum                       us       155.10
+    sm__cycles_elapsed.avg                    cycle   244,442.20
+    sm__cycles_elapsed.avg.per_second           Ghz         1.58
+    sm__inst_executed.sum                      inst   20,016,180
+    smsp__cycles_elapsed.sum                  cycle   39,110,752
+    smsp__cycles_elapsed.sum.per_second         Ghz       252.16
+    smsp__inst_executed.sum                    inst   20,016,180
+    ----------------------------------- ----------- ------------
+
